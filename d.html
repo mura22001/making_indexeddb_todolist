@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>to_do_list3</title>
+</head>
+
+<body>
+<script src="d.js" type="text/javascript" language="javascript"></script>
+<h1>To Do List</h1>
+
+<form name="todo">
+	<label for="task">仕事名</label>
+	<input type="text" name="task" value="仕事名">
+	<br>
+	<label for="explanation">説明</label>
+	<input type="textarea" name="explanation" value="説明">
+	<br>
+	優先度：<label><input type="radio" name="priority" value="high" checked>高</label>
+	<label><input type="radio" name="priority" value="middle">中</label>
+	<label><input type="radio" name="priority" value="low">低</label>
+	<hr>
+	<input type="button" value="送信" onclick="checkText();">
+
+</form>
+
+<!-- <table border="1">
+	<tr>
+		<th>仕事名</th>
+		<th>説明</th>
+		<th>優先度</th>
+	</tr>
+	<tr>
+		<div id="data"></div>
+	</tr>
+</table> -->
+<div id="data"></div>
+
+</body>
+</html>
